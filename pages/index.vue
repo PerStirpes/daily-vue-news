@@ -12,16 +12,26 @@
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
         <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
       </div>
+      <div>
+        <Items>
+        </Items>
+      </div>
     </div>
+
   </section>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
+import Items from '~/components/Items.vue'
 
 export default {
   components: {
-    Logo
+    Logo,
+    Items
+  },
+  async fetch({store}) {
+    await store.dispatch('FETCH_ITEMS', 'topstories.json')
   }
 }
 </script>
@@ -36,10 +46,10 @@ export default {
 }
 
 .title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
   display: block;
-  font-weight: 300;
-  font-size: 100px;
+  font-size: 36px;
   color: #35495e;
   letter-spacing: 1px;
 }
@@ -47,7 +57,7 @@ export default {
 .subtitle {
   font-weight: 300;
   font-size: 42px;
-  color: #526488;
+  color: #0000;
   word-spacing: 5px;
   padding-bottom: 15px;
 }
