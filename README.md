@@ -2,6 +2,8 @@
 
 > Nuxt.js project
 
+see it live https://daily-vue-news-jmakzzqmhg.now.sh/
+
 ## Build Setup
 
 ``` bash
