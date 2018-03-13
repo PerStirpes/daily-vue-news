@@ -1,4 +1,5 @@
 # daily-vue-news
+creates pages for each category apps and load, displays, filters, and basic styling
 
 > Nuxt.js project
 
@@ -8,17 +9,15 @@ see it live https://daily-vue-news-jmakzzqmhg.now.sh/
 
 ``` bash
 # install dependencies
-$ npm install # Or yarn install
+npm install 
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+# run dev version
+npm run dev
 
-# build for production and launch server
+# prod build 
 $ npm run build
 $ npm start
 
-# generate static project
-$ npm run generate
 ```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+
